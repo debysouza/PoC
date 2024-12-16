@@ -1,0 +1,47 @@
+/* Define o estilo geral para o contêiner do formulário */
+.form-container {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #716b8f4c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adiciona um espaçamento inferior entre os elementos de cada grupo de campos do formulário */
+.form-group {
+    margin-bottom: 10px;
+}
+
+/* Estiliza os rótulos dos campos do formulário para destacá-los */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estiliza os campos de entrada do formulário */
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Aplica um estilo visual ao campo de entrada quando está focado */
+.form-group input:focus {
+    border-color: #716b8f;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0.44, 0.42, 0.56, 1.0);
+}
+
+/* Define o estilo para mensagens de erro */
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}

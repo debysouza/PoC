@@ -5,15 +5,24 @@
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate; /* Define que as bordas das células da tabela não devem se unir, permitindo a aplicação de bordas arredondadas individualmente */
     margin: 20px 0;
     font-size: 16px; /* Tamanho da fonte reduzido */
     text-align: left;
     background-color: #ffffff; /* Fundo branco para a tabela */
+    border-radius: 8px; /* Aplica bordas arredondadas */
 }
 
 th, td {
     padding: 8px 10px; /* Padding reduzido */
+}
+
+thead tr:first-child th:first-child {
+    border-top-left-radius: 8px; /* Aplica um canto arredondado ao topo esquerdo do primeiro cabeçalho da tabela */
+}
+
+thead tr:first-child th:last-child {
+    border-top-right-radius: 8px; /* Aplica um canto arredondado ao topo direito do primeiro cabeçalho da tabela */
 }
 
 thead tr {
@@ -29,4 +38,12 @@ tbody tr {
 
 tbody tr:hover {
     background-color: #f1f1f1; /* Cinza claro ao passar o mouse */
+}
+
+/* Estiliza o placeholder */
+.empty-message {
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+    margin-top: 20px;
 }

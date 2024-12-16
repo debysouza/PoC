@@ -5,11 +5,38 @@
     padding: 16px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     min-height: 300px; 
-    margin: 20px 0; 
+    margin: 20px 0;
+    overflow: visible; /* Garante que elementos que excedem o tamanho do contêiner sejam exibidos */
 }
 
 .chart-container h1 {
     font-size: 24px; 
     margin-bottom: 16px; 
     color: #333333; 
+}
+
+/* Define as dimensões e a posição do div que conterá o gráfico */
+#chartdiv {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+/* Estiliza uma mensagem exibida quando não há dados para o gráfico */
+.empty-message {
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+    margin-top: 20px;
+}
+
+/* Personaliza os tooltips do gráfico */
+.amcharts5-tooltip {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    pointer-events: none;
+    z-index: 1000;
 }
